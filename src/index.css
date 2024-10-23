@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ffffff20;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff30;
+}
+
+body {
+  @apply bg-black text-gray-300;
+  -webkit-tap-highlight-color: transparent;
+}
+
+@media (max-width: 1024px) {
+  ::-webkit-scrollbar {
+    width: 0px;
+  }
+}
